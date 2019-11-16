@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Villa contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+  <script src="https://kit.fontawesome.com/6077f55933.js" crossorigin="anonymous"></script>
+
+  <!--  test bootstrap -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <header>
+    <!-- header layer 1 -->
+    <div class="hd-layer-1">
+      <!-- company logo -->
+      <h3 class="comp-logo">UNIVERSE</h3>
+      <!-- desktop nav menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href='#' class="nav-hov-item">HOME</a></li>
+          <li onclick="moveToSection('about-sect-id')"><a class="nav-hov-item">ABOUT</a></li>
+          <li onclick="moveToSection('service-sect-id')"><a class="nav-hov-item">SERVICE</a></li>
+          <li id="hd-1-drop-btn">
+            <a id="hd-1-drop" href="#">DROPDOWN</a>
+            <span class="hd-1-drop-list">
+              <ul>
+                <li onclick="moveToSection('team-sect-id')"><a class="nav-hov-item">Team</a></li>
+                <li onclick="moveToSection('news-sect-id')"><a class="nav-hov-item">News</a></li>
+                <li onclick="moveToSection('testi-sect-id')"><a class="nav-hov-item">Testimonial</a></li>
+                <hr />
+                <li onclick="moveToSection('typo-sect-id')"><a class="nav-hov-item">Typography</a></li>
+              </ul>
+            </span>
+          </li>
+          <li onclick="moveToSection('portfolio-sect-id')"><a class="nav-hov-item">PORTFOLIO</a></li>
+          <li onclick="moveToSection('contact-sect-id')"><a class="nav-hov-item">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- mobile nave menu -->
+      <nav class="navbar navbar-expand-lg navbar-light nav-mobile">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler bg-light mobile-menu-btn" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" onclick="moveToSection('about-sect-id')">
+              <a class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item" onclick="moveToSection('service-sect-id')">
+              <a class="nav-link">SERVICE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                DROPDOWN
+              </a>
+              <div class="dropdown-menu sub-dropn-btn-wrap" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" onclick="moveToSection('team-sect-id')">Team</a>
+                <a class="dropdown-item" onclick="moveToSection('news-sect-id')">News</a>
+                <a class="dropdown-item" onclick="moveToSection('testi-sect-id')">Testimonial</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" >Typography</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" onclick="moveToSection('portfolio-sect-id')">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" onclick="moveToSection('contact-sect-id')">CONTACT</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+        </div>
+      </nav>
+    </div>
+    <div class="hd-center-text" id='header-cent-text'>
+
+    </div>
+  </header>
+  <!-- section heading 1 -->
+  <section id='service-sect-id' class="sec-1 center-container sect">
+    <div class="sec-title">
+      <h2>Section Heading</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+    </div>
+    <div class="sec-1-content-wrap">
+      <div class="sec-1-content-item">
+        <i class="fab fa-buromobelexperte"></i>
+        <div class="sec-1-content-item-title">HEADING GOES HERE</div>
+        <div class="sec-1-content-item-detail">
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </div>
+      </div>
+      <div class="sec-1-content-item">
+        <i class="fas fa-code"></i>
+        <div class="sec-1-content-item-title">HEADING GOES HERE</div>
+        <div class="sec-1-content-item-detail">
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </div>
+      </div>
+
+      <div class="sec-1-content-item">
+        <i class="fab fa-angular"></i>
+        <div class="sec-1-content-item-title">HEADING GOES HERE</div>
+        <div class="sec-1-content-item-detail">
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </div>
+      </div>
+      <div class="sec-1-content-item">
+        <i class="fab fa-apple"></i>
+        <div class="sec-1-content-item-title">HEADING GOES HERE</div>
+        <div class="sec-1-content-item-detail">
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </div>
+      </div>
+      <div class="sec-1-content-item">
+        <i class="fas fa-at"></i>
+        <div class="sec-1-content-item-title">HEADING GOES HERE</div>
+        <div class="sec-1-content-item-detail">
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </div>
+      </div>
+      <div class="sec-1-content-item">
+        <i class="fab fa-autoprefixer"></i>
+        <div class="sec-1-content-item-title">HEADING GOES HERE</div>
+        <div class="sec-1-content-item-detail">
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT SECTION -->
+  <seciton id='about-sect-id' class="about-us-container center-container sect">
+    <div class="about-us-content">
+      <h3>ABOUT US</h3>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only
+        five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the ore
+        recently with desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum
+      </p>
+      <a class="about-us-read-more-btn" href="#">READ MORE</a>
+    </div>
+    <img class="about-us-image" src="./images/abt.jpg" />
+  </seciton>
+
+  <!-- SECTION HEADING 2 -->
+  <section id='portfolio-sect-id' class="sec-2 center-container">
+    <div class="sec-title">
+      <h2>Section Heading</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+    </div>
+    <div class="sec-2-cont-wrap">
+      <div class="sec-2-cont-ctrl-bar">
+        <div class="sec-2-cont-ctrl-btn" onclick="handleClickImgControlBar(this.innerText, 0)">
+          ALL
+        </div>
+        <div class="sec-2-cont-ctrl-btn" onclick="handleClickImgControlBar(this.innerText, 1)">
+          INTERIOR
+        </div>
+        <div class="sec-2-cont-ctrl-btn" onclick="handleClickImgControlBar(this.innerText, 2)">
+          TECHNOLOGY
+        </div>
+        <div class="sec-2-cont-ctrl-btn" onclick="handleClickImgControlBar(this.innerText, 3)">
+          TRAVEL
+        </div>
+        <div class="sec-2-cont-ctrl-btn" onclick="handleClickImgControlBar(this.innerText, 4)">
+          PACKAGE
+        </div>
+      </div>
+      <div class="sec-2-cont-detail"></div>
+    </div>
+  </section>
+
+  <!--- DESIGN RULE -->
+  <section class="design-rule-wrap center-container sect">
+    <!-- rule 1 -->
+    <div class="design-rule-item-wrap">
+      <div class="design-rule-image-side">
+        <img class="design-rule-image" src="./images/animation/g1.jpg" />
+        <span class="design-rule-caption-1">RESPONSIVE <span class="design-rule-caption-2"> DESIGN</span></span>
+        <div class="circle-des">
+          IF YOU THINK<br />
+          MATH IS HARD,<br />
+          TRY WEB<br />
+          DESIGN.
+        </div>
+      </div>
+
+      <div class="design-rule-content-side">
+        <h3>BETTER WAYS TO CREATE <span>DESIGN</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et veniam.
+        </p>
+      </div>
+    </div>
+    <!-- rule 2 -->
+    <div class="design-rule-item-wrap">
+      <div class="design-rule-image-side">
+        <img class="design-rule-image" src="./images/animation/g8.jpg" />
+        <span class="design-rule-caption-1">CREATIVE <span class="design-rule-caption-2"> DESIGN</span></span>
+        <div class="circle-des">
+          IF YOU THINK<br />
+          MATH IS HARD,<br />
+          TRY WEB<br />
+          DESIGN.
+        </div>
+      </div>
+
+      <div class="design-rule-content-side">
+        <h3>BETTER WAYS TO CREATE <span>DESIGN</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et veniam.
+        </p>
+      </div>
+    </div>
+    <!-- rule 3 -->
+    <div class="design-rule-item-wrap">
+      <div class="design-rule-image-side">
+        <img class="design-rule-image" src="./images/animation/g7.jpg" />
+        <span class="design-rule-caption-1">WEB <span class="design-rule-caption-2"> DESIGN</span></span>
+        <div class="circle-des">
+          IF YOU THINK<br />
+          MATH IS HARD,<br />
+          TRY WEB<br />
+          DESIGN.
+        </div>
+      </div>
+
+      <div class="design-rule-content-side">
+        <h3>BETTER WAYS TO CREATE <span>DESIGN</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et veniam.
+        </p>
+      </div>
+    </div>
+    <div class="video-banner-wrap">
+      <video id='vid' class="video-frame" autoplay loop muted>
+        <source src="./videos/meeting.mp4" type="video/mp4" />
+      </video>
+      <div class="video-banner-cont-wrap">
+        <p>
+          What separates design from art is that design is meant to be...
+          functional.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
+          risus eget libero finibus facilisis. Phasellus tempus hendrerit sem
+          ut tempus sem.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!----------------- AUTHOR TEAM ---------------------->
+  <section id='team-sect-id' class="sec sec-3 center-container sect">
+    <!-- title -->
+    <div class="sec-title">
+      <h2>Unknown Authors' Team</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+    </div>
+    <!-- infor about all authors -->
+    <div class="auth-all-imgs-container">
+      <div class="auth-img-wrap">
+        <img src="./images/team/member1.jpg" />
+        <!-- the moving content when hover the author image -->
+        <div class="member-info">
+          <p>Member 1</p>
+          <p>Marketting</p>
+          <div class="member-contact-box">
+            <a class="contact-box" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="auth-img-wrap">
+        <img src="./images/team/member2.jpg" />
+        <!-- the moving content when hover the author image -->
+        <div class="member-info">
+          <p>Member 1</p>
+          <p>Marketting</p>
+          <div class="member-contact-box">
+            <a class="contact-box" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="auth-img-wrap">
+        <img src="./images/team/member3.jpg" />
+        <!-- the moving content when hover the author image -->
+        <div class="member-info">
+          <p>Member 1</p>
+          <p>Marketting</p>
+          <div class="member-contact-box">
+            <a class="contact-box" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="auth-img-wrap">
+        <img src="./images/team/member4.jpg" />
+        <!-- the moving content when hover the author image -->
+        <div class="member-info">
+          <p>Member 1</p>
+          <p>Marketting</p>
+          <div class="member-contact-box">
+            <a class="contact-box" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="auth-img-wrap">
+        <img src="./images/team/member5.jpg" />
+        <!-- the moving content when hover the author image -->
+        <div class="member-info">
+          <p>Member 1</p>
+          <p>Marketting</p>
+          <div class="member-contact-box">
+            <a class="contact-box" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="contact-box" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="auth-img-wrap">
+        <img src="./images/team/member6.jpg" />
+        <!-- the moving content when hover the author image -->
+        <div class="member-info">
+          <p>Member 1</p>
+          <p>Marketting</p>
+          <div class="member-contact-box">
+            <a class="contact-box blu-bg-hov" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="contact-box oc-blu-bg-hov" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="contact-box red-bg-hov" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STATS COUNT UP -->
+  <section class="static-container center-container sect">
+    <div class="static-item-wrap bg-light-blue">
+      <i class="far fa-building static-icon"></i>
+      <div class="static-num">0</div>
+      <hr />
+      <div class="static-title">BRANCHES</div>
+    </div>
+    <div class="static-item-wrap bg-light-red">
+      <i class="fas fa-users static-icon"></i>
+      <div class="static-num">0</div>
+      <hr />
+      <div class="static-title">QUALIFIED MEMBERS</div>
+    </div>
+    <div class="static-item-wrap bg-light-orange">
+      <i class="far fa-edit static-icon"></i>
+      <div class="static-num">0</div>
+      <hr />
+      <div class="static-title">PROJECTS DONE</div>
+    </div>
+    <div class="static-item-wrap bg-light-purple">
+      <i class="far fa-smile static-icon"></i>
+      <div class="static-num">0</div>
+      <hr />
+      <div class="static-title">HAPPY CUSTOMERS</div>
+    </div>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section id='news-sect-id' class='news-sec-container center-sm-container'>
+    <div class="sec sec-title">
+      <h2>Unknown News</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+    </div>
+    <div class="news-sec-content-container">
+      <!-- a card -->
+      <div class='news-card'>
+        <div class='news-card-img'>
+          <img src='./images/animation/g9.jpg' />
+        </div>
+        <div class="news-card-content">
+          <h5>New title goes here<h5>
+              <p>This is a longer card with supporting text below as a natural lead-in to additional content. This
+                content is a little bit longer.
+              </p>
+              <a href='#'>READ MORE</a>
+        </div>
+      </div>
+      <!-- a card -->
+      <div class='news-card'>
+        <div class='news-card-img'>
+          <img src='./images/animation/g1.jpg' />
+        </div>
+        <div class="news-card-content">
+          <h5>New title goes here<h5>
+              <p>This is a longer card with supporting text below as a natural lead-in to additional content. This
+                content is a little bit longer.
+              </p>
+              <a href='#'>READ MORE</a>
+        </div>
+      </div>
+      <!-- a card -->
+      <div class='news-card'>
+        <div class="news-card-content">
+          <p class="new-card-special-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+            erat a ante..
+          </p>
+          <p class="new-card-quote">-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+            ante..
+          </p>
+          <a href='#'>READ MORE</a>
+        </div>
+      </div>
+      <!-- a card -->
+      <div class='news-card'>
+        <div class='news-card-img'>
+          <img src='./images/animation/g4.jpg' />
+        </div>
+        <div class="news-card-content">
+          <h5>New title goes here<h5>
+              <p>This card has supporting text below as a natural lead-in to additional content.
+              </p>
+              <p class="new-card-quote">Last updated 3 mins ago
+              </p>
+              <a href='#'>READ MORE</a>
+        </div>
+      </div>
+      <!-- a card -->
+      <div class='news-card'>
+        <div class="news-card-content">
+          <h5>New title goes here<h5>
+              <p>This card has supporting text below as a natural lead-in to additional content.
+              </p>
+              <p class="new-card-quote">Last updated 3 mins ago
+              </p>
+              <a href='#'>READ MORE</a>
+        </div>
+      </div>
+      <!-- a card -->
+      <div class='news-card'>
+        <div class='news-card-img'>
+          <img src='./images/animation/g9.jpg' />
+        </div>
+      </div>
+      <!-- a card -->
+      <div class='news-card'>
+        <div class="news-card-content">
+          <h5>New title goes here<h5>
+              <p>This is a wider card with supporting text below as a natural lead-in to additional content. This card
+                has even longer content than the first to show that equal height action.
+              </p>
+              <p class="new-card-quote">Last updated 3 mins ago
+              </p>
+              <a href='#'>READ MORE</a>
+        </div>
+      </div>
+      <!-- a card -->
+      <div class='news-card'>
+        <div class='news-card-img'>
+          <img src='./images/animation/g1.jpg' />
+        </div>
+        <div class="news-card-content">
+          <h5>New title goes here<h5>
+              <p>This is a longer card with supporting text below as a natural lead-in to additional content. This
+                content is a little bit longer.
+              </p>
+              <a href='#'>READ MORE</a>
+        </div>
+
+  </section>
+  <!-- CUSTOMER'S COMMENTS  -->
+  <section id='testi-sect-id' class='customer-comment-container transparent-sec trans-bg-1'>
+    <!-- title -->
+    <div class="transparent-sec-title">
+      <h2>Testimonials</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+    </div>
+    <div class="comment-container">
+      <div class="comment-content-container">
+        <div class="all-comments-wrap">
+
+
+          <!-- first comment -->
+          <div class="comment-content-wrap cmt-1" id='cmt-1'>
+            <div class="comment-content-box">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+              classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+              a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+              Latin words, consectetur.
+            </div>
+            <div class="client-detail-container">
+              <div class="client-img-wrap">
+                <img src='./images/team/member1.jpg' />
+              </div>
+              <div class="client-detail">
+                <h4>John Nguyeen</h4>
+                <p>dolor supporter</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2nd comment -->
+          <div class="comment-content-wrap cmt-2" id='cmt-2'>
+            <div class="comment-content-box">
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+              Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced
+              in their exact original form.
+            </div>
+            <div class="client-detail-container">
+              <div class="client-img-wrap">
+                <img src='./images/team/member6.jpg' />
+              </div>
+              <div class="client-detail">
+                <h4>John Nguyeen</h4>
+                <p>dolor supporter</p>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd comment -->
+          <div class="comment-content-wrap" id='cmt-3'>
+            <div class="comment-content-box">
+              This is a longer card with supporting text below as a natural lead-in to additional content. This content
+              is
+              a little bit longer.
+            </div>
+            <div class="client-detail-container">
+              <div class="client-img-wrap">
+                <img src='./images/team/member4.jpg' />
+              </div>
+              <div class="client-detail">
+                <h4>John Nguyeen</h4>
+                <p>dolor supporter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="comment-content-control-container">
+        <div class="move-cmt-btn no-select" id='move-forward' onclick="moveComment('left',this)">&lt</div>
+        <div class="move-cmt-btn no-select" id='move-backward' onclick="moveComment('right',this)">&gt</div>
+      </div>
+      <div class="comment-specific-select-btns-container">
+        <div class="select-specific-cmt-btn no-select" id='cmt-1-btn' onclick="moveComment('cmt-1',this)"></div>
+        <div class="select-specific-cmt-btn no-select" id='cmt-2-btn' onclick="moveComment('cmt-2',this)"></div>
+        <div class="select-specific-cmt-btn no-select" id='cmt-3-btn' onclick="moveComment('cmt-3',this)"></div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT SECTION -->
+  <section id='contact-sect-id' class="contact-sec center-container-sm sect center-container">
+    <div class="sec sec-title">
+      <h2>Contact Us</h2>
+      <p>Lorem Ipsum is simply dummy text and typesetting industry.</p>
+    </div>
+    <div class="contact-content-container">
+      <form class="contact-input-container pd-20">
+        <div class="contact-input-title big-black-title">Drop us a line</div>
+        <input class="contact-input marg-ver-10" type='text' placeholder="Your Name..." />
+        <input class="contact-input marg-ver-10" type='text' placeholder="dsadas" />
+        <input class="contact-input marg-ver-10" type='text' placeholder="dsadsad" />
+        <textarea class="contact-input__big marg-ver-10" placeholder="asdsad"></textarea>
+        <button class="contact-submit-btn" type='submit'><span><i
+              class="fa fa-paper-plane fa-fw"></i></span>Send</button>
+      </form>
+      <div class="contact-author-info pd-20">
+        <div class="contact-author-title big-black-title">Our address</div>
+        <div class="contact-author-item-container">
+          <i class="fa fa-map-marker fa-fw"></i>
+          <div>56th lorem, New York, ipsum sed, United States</div>
+        </div>
+        <div class="contact-author-item-container">
+          <i class="fa fa-envelope fa-fw"></i>
+          <div>Example.com</div>
+        </div>
+        <div class="contact-author-item-container">
+          <i class="fa fa-phone fa-fw"></i>
+          <div>+56 (0) 985 0011 002</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- MAP SECTION -->
+  <iframe class="school-map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.2221622100037!2d106.69998211853886!3d10.769262811572188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f7dbce91fbd%3A0x3954d44420742ac3!2sNordic%20Coder!5e0!3m2!1sen!2s!4v1573898494354!5m2!1sen!2s"
+    height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <!-- STAY CONNECTED -->
+  <div class="stay-connect-section">
+    <div class="connect-title">Stay Connected</div>
+    <div class="member-contact-box" id='footer-contact-content'>
+      <a class="contact-box" href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="contact-box" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="contact-box" href="#">
+        <i class="fab fa-google-plus-g"></i>
+      </a>
+    </div>
+
+  </div>
+  <!-- COPYRIGHT SECTION -->
+  <div class="copy-right-sec">
+    © 2018. Universe. All rights reserved | Design by W3layouts
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="bundle.runHeaderTitleAndVideo.js"></script><script type="text/javascript" src="bundle.staticCountEffect.js"></script></body>
+<script type="text/javascript" src="./staticCountEffect.js"></script>
+<script type="text/javascript" src="./parallaxAndItemMoveEffect.js"></script>
+<script type="text/javascript" src=".//runHeaderTitleAndVideo.js"></script>
+<script type="text/javascript" src="./TestimonalEffect.js"></script>
+<script type="text/javascript" src="./windowScrollToEffect.js"></script>
+
+</html>
+
+<!-- icomoon tao font de xai -->
+
+
+<!-- GREAT WEB DESIGN<br />
+WITHOUT FUNCTIONALITY IS<br />
+LIKE A SPORTS CAR WITH NO ENGINE.<br />
+WEBSITES SHOULD LOOK GOOD FROM THE INSIDE AND OUT. -->
