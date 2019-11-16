@@ -1,4 +1,4 @@
-TO RUN THE PROJECT
+TO RUN THE PROJECT<br>
 =========== Method 1================
 1. npm install
 2. npm start 
