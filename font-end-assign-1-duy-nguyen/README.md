@@ -4,5 +4,6 @@
 <p>2. npm start</p>
 <p>--> project automatically run on localhost listening port 8080</p>
 <p>=========== Method 2================<p>
-<p>use live server extension to run project (recommended)</p>
+<p>We can get rid of all heavy packages by using live server to run project</p>
+<p>--> Use live server extension to run project instead (recommended)</p>
 
