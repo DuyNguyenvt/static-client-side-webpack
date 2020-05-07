@@ -1,4 +1,6 @@
  # Lake page
+ 
+ html, css, js (built and run with webpack)
  ## Run Application
  ### `npm install`
  
