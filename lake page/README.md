@@ -1,6 +1,8 @@
  # Lake page
  ## Run Application
  ### `npm install`
+ 
+ install dependencies
  ### `npm run start`
  
  app will be available on port 8080
