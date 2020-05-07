@@ -5,6 +5,6 @@
  
  app will be available on port 8080
  
- ### Deploy with webpack
+ ## Deploy with webpack
  ### `npm run build`
 
